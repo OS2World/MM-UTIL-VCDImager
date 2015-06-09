@@ -1,0 +1,446 @@
+# Makefile.in generated automatically by automake 1.5 from Makefile.am.
+
+# Copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001
+# Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+@SET_MAKE@
+
+# $Id: Makefile.am,v 1.20 2001/09/21 16:31:56 hvr Exp $
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+top_builddir = ..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+INSTALL_HEADER = $(INSTALL_DATA)
+transform = @program_transform_name@
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+host_alias = @host_alias@
+host_triplet = @host@
+AMTAR = @AMTAR@
+AS = @AS@
+AWK = @AWK@
+CC = @CC@
+CPP = @CPP@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DEPDIR = @DEPDIR@
+DLLTOOL = @DLLTOOL@
+ECHO = @ECHO@
+EXEEXT = @EXEEXT@
+HELP2MAN = @HELP2MAN@
+INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+LIBTOOL = @LIBTOOL@
+LIBVCD_CFLAGS = @LIBVCD_CFLAGS@
+LIBVCD_LIBS = @LIBVCD_LIBS@
+LN_S = @LN_S@
+MAINT = @MAINT@
+OBJDUMP = @OBJDUMP@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+PACKAGE_PIXMAPS_DIR = @PACKAGE_PIXMAPS_DIR@
+POPT_CFLAGS = @POPT_CFLAGS@
+POPT_LIBS = @POPT_LIBS@
+RANLIB = @RANLIB@
+STRIP = @STRIP@
+VERSION = @VERSION@
+XML2_CONFIG = @XML2_CONFIG@
+XML_CFLAGS = @XML_CFLAGS@
+XML_CONFIG = @XML_CONFIG@
+XML_LIBS = @XML_LIBS@
+am__include = @am__include@
+am__quote = @am__quote@
+install_sh = @install_sh@
+
+noinst_LIBRARIES = libvcd.a
+
+INCLUDES = -I$(top_srcdir)
+
+libvcd_a_SOURCES = \
+	vcd.c \
+	vcd.h \
+	vcd_assert.h \
+	vcd_bitvec.h \
+	vcd_bytesex.c \
+	vcd_bytesex.h \
+	vcd_bytesex_asm.h \
+	vcd_cd_sector.c \
+	vcd_cd_sector.h \
+	vcd_cd_sector_private.h \
+	vcd_data_structures.c \
+	vcd_data_structures.h \
+	vcd_dict.h \
+	vcd_directory.c \
+	vcd_directory.h \
+	vcd_files.c \
+	vcd_files.h \
+	vcd_files_private.h \
+	vcd_image.c \
+	vcd_image.h \
+	vcd_image_fs.c \
+	vcd_image_fs.h \
+	vcd_image_bincue.c \
+	vcd_image_bincue.h \
+	vcd_image_cdrdao.c \
+	vcd_image_cdrdao.h \
+	vcd_image_nrg.c \
+	vcd_image_nrg.h \
+	vcd_image_cd.h \
+	vcd_image_bsdicd.c \
+	vcd_image_bsdicd.h \
+	vcd_image_linuxcd.c \
+	vcd_image_linuxcd.h \
+	vcd_image_vpkt.c \
+	vcd_image_vpkt.h \
+	vcd_iso9660.c \
+	vcd_iso9660.h \
+	vcd_iso9660_private.h \
+	vcd_logging.c \
+	vcd_logging.h \
+	vcd_mmc_linux.c \
+	vcd_mmc_linux.h \
+	vcd_mmc_private.h \
+	vcd_mpeg.c \
+	vcd_mpeg.h \
+	vcd_mpeg_stream.c \
+	vcd_mpeg_stream.h \
+	vcd_obj.h \
+	vcd_pbc.h \
+	vcd_pbc.c \
+	vcd_recorder.c \
+	vcd_recorder.h \
+	vcd_recorder_mmc.c \
+	vcd_recorder_mmc.h \
+	vcd_salloc.c \
+	vcd_salloc.h \
+	vcd_stream.c \
+	vcd_stream.h \
+	vcd_stream_stdio.c \
+	vcd_stream_stdio.h \
+	vcd_util.c \
+	vcd_util.h \
+	vcd_types.h \
+	vcd_xa.h
+
+subdir = libvcd
+mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+CONFIG_HEADER = $(top_builddir)/config.h
+CONFIG_CLEAN_FILES =
+LIBRARIES = $(noinst_LIBRARIES)
+
+libvcd_a_AR = $(AR) cru
+libvcd_a_LIBADD =
+am_libvcd_a_OBJECTS = vcd.$(OBJEXT) vcd_bytesex.$(OBJEXT) \
+	vcd_cd_sector.$(OBJEXT) vcd_data_structures.$(OBJEXT) \
+	vcd_directory.$(OBJEXT) vcd_files.$(OBJEXT) vcd_image.$(OBJEXT) \
+	vcd_image_fs.$(OBJEXT) vcd_image_bincue.$(OBJEXT) \
+	vcd_image_cdrdao.$(OBJEXT) vcd_image_nrg.$(OBJEXT) \
+	vcd_image_bsdicd.$(OBJEXT) vcd_image_linuxcd.$(OBJEXT) \
+	vcd_image_vpkt.$(OBJEXT) vcd_iso9660.$(OBJEXT) \
+	vcd_logging.$(OBJEXT) vcd_mmc_linux.$(OBJEXT) \
+	vcd_mpeg.$(OBJEXT) vcd_mpeg_stream.$(OBJEXT) vcd_pbc.$(OBJEXT) \
+	vcd_recorder.$(OBJEXT) vcd_recorder_mmc.$(OBJEXT) \
+	vcd_salloc.$(OBJEXT) vcd_stream.$(OBJEXT) \
+	vcd_stream_stdio.$(OBJEXT) vcd_util.$(OBJEXT)
+libvcd_a_OBJECTS = $(am_libvcd_a_OBJECTS)
+
+DEFS = @DEFS@
+DEFAULT_INCLUDES =  -I. -I$(srcdir) -I$(top_builddir)
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+depcomp = $(SHELL) $(top_srcdir)/depcomp
+@AMDEP_TRUE@DEP_FILES = $(DEPDIR)/vcd.Po $(DEPDIR)/vcd_bytesex.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_cd_sector.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_data_structures.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_directory.Po $(DEPDIR)/vcd_files.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_image.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_image_bincue.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_image_bsdicd.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_image_cdrdao.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_image_fs.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_image_linuxcd.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_image_nrg.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_image_vpkt.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_iso9660.Po $(DEPDIR)/vcd_logging.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_mmc_linux.Po $(DEPDIR)/vcd_mpeg.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_mpeg_stream.Po $(DEPDIR)/vcd_pbc.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_recorder.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_recorder_mmc.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_salloc.Po $(DEPDIR)/vcd_stream.Po \
+@AMDEP_TRUE@	$(DEPDIR)/vcd_stream_stdio.Po $(DEPDIR)/vcd_util.Po
+COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
+	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) \
+	$(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+CCLD = $(CC)
+LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+	$(AM_LDFLAGS) $(LDFLAGS) -o $@
+CFLAGS = @CFLAGS@
+DIST_SOURCES = $(libvcd_a_SOURCES)
+DIST_COMMON = Makefile.am Makefile.in
+SOURCES = $(libvcd_a_SOURCES)
+
+all: all-am
+
+.SUFFIXES:
+.SUFFIXES: .c .lo .o .obj
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+	-rm -f libtool
+$(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ Makefile.am  $(top_srcdir)/configure.in $(ACLOCAL_M4)
+	cd $(top_srcdir) && \
+	  $(AUTOMAKE) --gnu  libvcd/Makefile
+Makefile: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) && \
+	  CONFIG_HEADERS= CONFIG_LINKS= \
+	  CONFIG_FILES=$(subdir)/$@ $(SHELL) ./config.status
+
+AR = ar
+
+clean-noinstLIBRARIES:
+	-test -z "$(noinst_LIBRARIES)" || rm -f $(noinst_LIBRARIES)
+libvcd.a: $(libvcd_a_OBJECTS) $(libvcd_a_DEPENDENCIES) 
+	-rm -f libvcd.a
+	$(libvcd_a_AR) libvcd.a $(libvcd_a_OBJECTS) $(libvcd_a_LIBADD)
+	$(RANLIB) libvcd.a
+
+mostlyclean-compile:
+	-rm -f *.$(OBJEXT) core *.core
+
+distclean-compile:
+	-rm -f *.tab.c
+
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_bytesex.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_cd_sector.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_data_structures.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_directory.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_files.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_image.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_image_bincue.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_image_bsdicd.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_image_cdrdao.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_image_fs.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_image_linuxcd.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_image_nrg.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_image_vpkt.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_iso9660.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_logging.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_mmc_linux.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_mpeg.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_mpeg_stream.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_pbc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_recorder.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_recorder_mmc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_salloc.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_stream.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_stream_stdio.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/vcd_util.Po@am__quote@
+
+distclean-depend:
+	-rm -rf $(DEPDIR)
+
+.c.o:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Po' tmpdepfile='$(DEPDIR)/$*.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(COMPILE) -c `test -f $< || echo '$(srcdir)/'`$<
+
+.c.obj:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Po' tmpdepfile='$(DEPDIR)/$*.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(COMPILE) -c `cygpath -w $<`
+
+.c.lo:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Plo' tmpdepfile='$(DEPDIR)/$*.TPlo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(LTCOMPILE) -c -o $@ `test -f $< || echo '$(srcdir)/'`$<
+CCDEPMODE = @CCDEPMODE@
+uninstall-info-am:
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	mkid -fID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) \
+		$(TAGS_FILES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || etags $(ETAGS_ARGS) $$tags  $$unique $(LISP)
+
+GTAGS:
+	here=`CDPATH=: && cd $(top_builddir) && pwd` \
+	  && cd $(top_srcdir) \
+	  && gtags -i $(GTAGS_ARGS) $$here
+
+distclean-tags:
+	-rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH
+
+DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+
+top_distdir = ..
+distdir = $(top_distdir)/$(PACKAGE)-$(VERSION)
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  if test -f $$file; then d=.; else d=$(srcdir); fi; \
+	  dir=`echo "$$file" | sed -e 's,/[^/]*$$,,'`; \
+	  if test "$$dir" != "$$file" && test "$$dir" != "."; then \
+	    $(mkinstalldirs) "$(distdir)/$$dir"; \
+	  fi; \
+	  if test -d $$d/$$file; then \
+	    cp -pR $$d/$$file $(distdir) \
+	    || exit 1; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || cp -p $$d/$$file $(distdir)/$$file \
+	    || exit 1; \
+	  fi; \
+	done
+check-am: all-am
+check: check-am
+all-am: Makefile $(LIBRARIES)
+
+installdirs:
+
+install: install-am
+install-exec: install-exec-am
+install-data: install-data-am
+uninstall: uninstall-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+
+installcheck: installcheck-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \
+	  `test -z '$(STRIP)' || \
+	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES) stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+	@echo "This command is intended for maintainers to use"
+	@echo "it deletes files that may require special tools to rebuild."
+clean: clean-am
+
+clean-am: clean-generic clean-libtool clean-noinstLIBRARIES \
+	mostlyclean-am
+
+distclean: distclean-am
+
+distclean-am: clean-am distclean-compile distclean-depend \
+	distclean-generic distclean-libtool distclean-tags
+
+dvi: dvi-am
+
+dvi-am:
+
+info: info-am
+
+info-am:
+
+install-data-am:
+
+install-exec-am:
+
+install-info: install-info-am
+
+install-man:
+
+installcheck-am:
+
+maintainer-clean: maintainer-clean-am
+
+maintainer-clean-am: distclean-am maintainer-clean-generic
+
+mostlyclean: mostlyclean-am
+
+mostlyclean-am: mostlyclean-compile mostlyclean-generic \
+	mostlyclean-libtool
+
+uninstall-am: uninstall-info-am
+
+.PHONY: GTAGS all all-am check check-am clean clean-generic \
+	clean-libtool clean-noinstLIBRARIES distclean distclean-compile \
+	distclean-depend distclean-generic distclean-libtool \
+	distclean-tags distdir dvi dvi-am info info-am install \
+	install-am install-data install-data-am install-exec \
+	install-exec-am install-info install-info-am install-man \
+	install-strip installcheck installcheck-am installdirs \
+	maintainer-clean maintainer-clean-generic mostlyclean \
+	mostlyclean-compile mostlyclean-generic mostlyclean-libtool \
+	tags uninstall uninstall-am uninstall-info-am
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:

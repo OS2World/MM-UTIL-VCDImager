@@ -1,0 +1,163 @@
+This is vcdimager.info, produced by makeinfo version 4.0b from
+vcdimager.texi.
+
+   This file documents GNU VCDImager, The GNU Video CD Authoring Tools.
+
+   Copyright (C) Herbert Valerio Riedel <<hvr@gnu.org>>
+
+
+
+   Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.1 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, one Front-Cover Text: "GNU VCDImager by Herbert
+Valerio Riedel et al." and one Back-Cover Text: "GNU VCDImager can be
+obtained at `http://www.gnu.org/software/vcdimager/'. The author is
+reachable at <hvr@gnu.org>".  A copy of the license is included in the
+section entitled "GNU Free Documentation License".
+
+INFO-DIR-SECTION Miscellaneous
+START-INFO-DIR-ENTRY
+* GNU VCDImager: (vcdimager).                   GNU Video CD imaging utilities
+* vcddebug: (vcdimager).                        Video CD debugging tool
+* vcdxgen: (vcdimager).                         Video CD XML template generator
+* vcdxbuild: (vcdimager).                       Video CD XML formatter
+* vcdxrip: (vcdimager).                         Video CD XML dis-assembler
+END-INFO-DIR-ENTRY
+
+
+Indirect:
+vcdimager.info-1: 1202
+vcdimager.info-2: 50587
+vcdimager.info-3: 98043
+
+Tag Table:
+(Indirect)
+Node: Top1202
+Node: Introduction1553
+Ref: Introduction-Footnote-11896
+Node: Supplied Tools1949
+Ref: Supplied Tools-Footnote-13343
+Node: Features3400
+Ref: Features-Footnote-14452
+Ref: Features-Footnote-24598
+Ref: Features-Footnote-34812
+Node: Video CD Concepts4981
+Node: Overview5589
+Node: Anatomy of Video CDs6073
+Ref: Anatomy of Video CDs-Footnote-18365
+Ref: Anatomy of Video CDs-Footnote-28542
+Ref: Anatomy of Video CDs-Footnote-38719
+Node: Known Video CD Flavors8796
+Node: Video CD 1.19241
+Ref: Video CD 1.1-Footnote-110299
+Ref: Video CD 1.1-Footnote-210403
+Ref: Video CD 1.1-Footnote-310494
+Ref: Video CD 1.1-Footnote-410569
+Node: Video CD 2.010783
+Ref: Video CD 2.0-Footnote-112336
+Ref: Video CD 2.0-Footnote-212530
+Node: Extended Video CD12702
+Node: Super Video CD 1.013192
+Ref: Super Video CD 1.0-Footnote-114541
+Ref: Super Video CD 1.0-Footnote-214772
+Node: HQ Video CD 1.014861
+Node: Extended Super Video CD15588
+Node: The ISO-9660 Track15896
+Node: Primary Volume Descriptor16141
+Node: Directory Structure16539
+Node: /VCD & /SVCD Directory16840
+Node: /MPEGAV & /MPEG2 Directory18193
+Node: /CDDA Directory18513
+Node: /SEGMENT Directory18833
+Node: /EXT Directory19087
+Node: /CDI Directory19867
+Node: Constraints on MPEG streams20088
+Node: Video CD20657
+Node: Super Video CD21322
+Ref: Super Video CD-Footnote-122092
+Node: Scan Information Data22210
+Ref: Scan Information Data-Footnote-122814
+Node: SVCD Subtitles22879
+Ref: SVCD Subtitles-Footnote-124045
+Node: Common Constraints24167
+Node: Alignment24363
+Ref: Alignment-Footnote-125168
+Ref: Alignment-Footnote-225248
+Node: Access Point Sectors25327
+Node: Play Items26266
+Node: Sequence Items26665
+Node: Segment Items27176
+Ref: Segment Items-Footnote-128074
+Ref: Segment Items-Footnote-228118
+Node: Playback Control28201
+Ref: Playback Control-Footnote-128721
+Node: Function Keys for Interaction28762
+Node: Linear Playback29407
+Ref: Linear Playback-Footnote-130074
+Node: PBC Lists30224
+Node: Play List30545
+Node: Selection List30878
+Node: End List32038
+Node: Command List32244
+Node: Applications32510
+Node: Reference32649
+Node: Tools32801
+Node: vcdimager32975
+Node: vcddebug33588
+Node: vcdxgen34123
+Node: Adding Files to the Video CD34618
+Ref: Adding Files to the Video CD-Footnote-136045
+Ref: Adding Files to the Video CD-Footnote-236166
+Node: CD-i Support36263
+Ref: CD-i Support-Footnote-137195
+Ref: CD-i Support-Footnote-237273
+Node: vcdxbuild37350
+Node: vcdxrip37687
+Node: vcdxminfo38323
+Node: Video CD XML Description38602
+Ref: Video CD XML Description-Footnote-139251
+Node: Common Rules39423
+Node: <videocd> Root42437
+Node: <option> Element44060
+Ref: <option> Element-Footnote-147249
+Ref: <option> Element-Footnote-247317
+Ref: <option> Element-Footnote-347378
+Node: <info> Container47509
+Ref: <info> Container-Footnote-150401
+Ref: <info> Container-Footnote-250482
+Node: <pvd> Container50587
+Node: <filesystem> Container52488
+Node: <folder> Element/Container53033
+Node: <file> Element/Container53682
+Node: <segment-items> Container54598
+Node: <segment-item> Element54977
+Node: <sequence-items> Container56227
+Node: <sequence-item> Element56526
+Ref: <sequence-item> Element-Footnote-159242
+Ref: <sequence-item> Element-Footnote-259565
+Node: <pbc> Container59698
+Node: <selection> Element61710
+Node: <playlist> Element66060
+Node: <endlist> Element68611
+Node: Examples69597
+Ref: Examples-Footnote-171591
+Ref: Examples-Footnote-271635
+Node: Simple Multitrack Example71680
+Node: Video CD Disassembling73431
+Node: Tips and Hints74179
+Node: SVCD Player Compatibility74399
+Node: Fast Forward & Fast Rewind with Super Video CDs75405
+Ref: Fast Forward & Fast Rewind with Super Video CDs-Footnote-176323
+Ref: Fast Forward & Fast Rewind with Super Video CDs-Footnote-276381
+Ref: Fast Forward & Fast Rewind with Super Video CDs-Footnote-376593
+Node: Character Sets76671
+Node: ISO646 d-Characters76867
+Node: ISO646 a-Characters77412
+Node: Acronym Expansions77934
+Node: GNU General Public License78787
+Node: GNU Free Documentation License98043
+Node: XML Tag Index117954
+Node: Concept Index121925
+
+End Tag Table

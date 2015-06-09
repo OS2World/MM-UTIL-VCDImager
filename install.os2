@@ -1,0 +1,37 @@
+Get the various *nix tools like
+fileutils, textutils, bash...
+I used bash 2.00.0(266) and gnu make
+3.79.1beta3.
+You need a working libxml2 installation to
+compile.
+
+0. EMXSHELL=BASH
+1. autoconf (using V2.50)
+2. configure --prefix=x:/xx --srcdir=x:/xx
+3. make
+4. make install
+
+The programs and documentation will be
+installed in your x:/usr tree.
+Go to http://www.unixos2.org for info
+about the necessary tools needed for
+porting.
+
+-------------
+The following sourcefiles are changed from
+the original sources:
+
+libvcd/vcd_types.h
+frontends\cli\vcdimager.c
+frontends\xml\vcd_xml_parse.c
+frontends\xml\vcd_xml_gen.c
+
+Search for __EMX__ to find the changes.
+
+-------------------
+
+Ported by Chris Wohlgemuth
+
+http://www.os2world.com/cdwriting
+http://www.geocities.com/SiliconValley/Sector/5785/
+
